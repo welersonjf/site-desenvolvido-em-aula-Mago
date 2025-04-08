@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-busca: #5913b441;
+
+    --cor-hover-texto: #5913b4;
+
+    --cor-primaria-fonte: #3B1270;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, p{
+    color: var(--cor-primaria-fonte);
+    font-weight: 400;
+}
+
+/*Início Cabeçalho*/
+header{
+    width: 100%;
+}
+
+nav{
+    padding: 1%;
+}
+
+/*Classe genérica para Display Flex*/
+.displayFlex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Gap utilizado no cabeçalho*/
+.gapCabecalho{
+    gap: 20%;
+}
+
+/*Gap entre os botões do cabeçalho*/
+.gapCabecalhoBotoes{
+    gap: 15%;
+}
+
+/*Borda do campo de Busca*/
+.bordaBusca{
+    border: 1px solid var(--cor-busca);
+    padding: 5px 10px;
+    gap: 3rem;
+}
+
+.bordaBusca:hover{
+    border: 1px solid var(--cor-hover-texto);
+}
+
+/*Input de busca no Blog*/
+.inputBusca{
+    border: none;
+    outline: none;
+    color: #5913b489;
+}
+
+.inputBusca::placeholder{
+    color: var(--cor-busca);
+}
+/*Fim input de busca no Blog*/
+
+/*Imagem da Lupa no input de busca*/
+.botaoBusca{
+    border: none;
+    background: none;
+    cursor:pointer;
+}
+
+/*Removendo todo o estilo da Tag A*/
+.removeDecoration{
+    text-decoration: none;
+}
+
+/*Removendo a quebra de linha*/
+.quebraDeLinha{
+    white-space: nowrap;
+}
+
+/*Display Flex do ambiente Virtual*/
+.displayFlexAmbienteV{
+    display:flex;
+    align-items:center;
+    gap: 5px;
+}
+
+/*Versão Tablet*/
+@media screen and (max-width: 1024px){
+    .displayFlex{
+        flex-wrap: wrap;
+    }
+
+    .marginResponsiva{
+        margin: 5% 0;
+    }
+
+    .tamanhoBotaoCabecalho{
+        width: 70px;
+        height: auto;
+        text-align: center;;
+    }
+
+    .marginBotaoCabecalho{
+        margin: 10% 0;
+    }
+}
+
+/*Versão Mobile*/
+
+/*Fim Cabeçalho*/
+
+
