@@ -6,6 +6,11 @@
     --cor-hover-texto: #5913b4;
 
     --cor-primaria-fonte: #3B1270;
+    --cor-branco-fonte: #FFFFFF; 
+
+    --cor-background-cursos: #3B1270;
+
+    --cor-background-botao: #8E35FF;
 }
 
 *{
@@ -20,6 +25,20 @@ body{
 h1, h2, p{
     color: var(--cor-primaria-fonte);
     font-weight: 400;
+}
+
+.marginSite{
+    margin:7% 17%;
+}
+
+@media screen and (max-width: 1024px){
+    .marginSite {
+        margin: 5% 14%;
+    }
+}
+
+.corTextoBranco{
+    color: var(--cor-branco-fonte);
 }
 
 /*Início Cabeçalho*/
@@ -120,4 +139,136 @@ nav{
 
 /*Fim Cabeçalho*/
 
+/*Início Informações*/
 
+h1{
+    opacity: 0.8;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1%;
+}
+
+.containerTextoInformacoes{
+    display: flex;
+}
+
+.textoInformacoes{
+    max-width: 237px;
+}
+
+.containerTextoInformacoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    align-items: flex-end;
+}
+
+.subtituloInformacoes{
+    font-size:6.5rem;
+}
+
+.imgInformacoes{
+    height: 254px
+}
+
+/*Tablet*/
+@media screen and (max-width: 1024px){
+    .containerTextoInformacoes{
+        flex-wrap: wrap;
+    }
+
+    .subtituloInformacoes {
+        font-size: 4rem;
+    }
+
+    .imgInformacoes{
+        display: none;
+    }
+
+    .textoInformacoes {
+        max-width: 80%;
+        margin-top: 5%;
+    }
+}
+
+/*Fim Informações*/
+
+/*Início Cursos*/
+.backgroundContainerCursos{
+    background-color: var(--cor-background-cursos);
+}
+
+.containerExternoCursos{
+    display: flex;
+}
+
+.posicaoPersonagem{
+    position: relative;
+    top: -70px;
+}
+
+.marginContainerEscolhaCursos{
+    margin: 4% 2%;
+}
+
+.subtituloEscolhaCurso{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.containerEscolhaCursos{
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    padding: 2% 4%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    background-color: rgba(255, 255, 255, 0.4);
+    min-width: 495px;
+
+}
+
+.containerBotoesEscolhaCursos{
+    display: flex;
+    align-items: center;
+    gap: 15%;
+}
+
+.botoesEscolhaCursos{
+    border: none;
+    background: none;
+    cursor:pointer;
+}
+
+.containerInternoCursos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.marginSkillCurso{
+    margin: 10% 0;
+}
+
+.marginTextoSkill{
+    margin: 2% 0;
+}
+/*Fim Cursos*/
+
+/*Inicio Botão Inscrever-se*/
+.posicionamentoBotaoInscrever{
+    position: relative;
+    margin: 0 17%;
+    top: -175px;
+}
+
+.botaoInscreverSe{
+    width: 100%;
+    display: block;
+    background-color: var(--cor-background-botao);
+    text-align: center;
+    padding: 2%;
+    font-size: 2rem;
+}
+/*Fim Botão Inscrever-se*/
